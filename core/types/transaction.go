@@ -185,8 +185,6 @@ func (tx *Transaction) UnmarshalBinary(b []byte) error {
 
 // decodeTyped decodes a typed transaction from the canonical format.
 func (tx *Transaction) decodeTyped(b []byte) (TxData, error) {
-	println("decode eleje, byte:")
-	println(b[0])
 	if len(b) <= 1 {
 		return nil, errShortTypedTx
 	}
@@ -204,13 +202,10 @@ func (tx *Transaction) decodeTyped(b []byte) (TxData, error) {
 		err := rlp.DecodeBytes(b[1:], &inner) // TODO(karalabe): This needs to be ssz
 		return &inner, err
 	case BaseSystemTxType:
-		println("eljut base casebe")
 		var inner BaseSystemTx
 		err := rlp.DecodeBytes(b[1:], &inner)
 		return &inner, err
 	default:
-		println("eljut default casebe, byte:")
-		println(b[0])
 		return nil, ErrTxTypeNotSupported
 	}
 }
