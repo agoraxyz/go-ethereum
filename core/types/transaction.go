@@ -46,7 +46,6 @@ const (
 	AccessListTxType = 0x01
 	DynamicFeeTxType = 0x02
 	BlobTxType       = 0x03
-	BaseSystemTxType = 0x7E
 )
 
 // Transaction is an Ethereum transaction.
@@ -200,10 +199,6 @@ func (tx *Transaction) decodeTyped(b []byte) (TxData, error) {
 	case BlobTxType:
 		var inner BlobTx
 		err := rlp.DecodeBytes(b[1:], &inner) // TODO(karalabe): This needs to be ssz
-		return &inner, err
-	case BaseSystemTxType:
-		var inner BaseSystemTx
-		err := rlp.DecodeBytes(b[1:], &inner)
 		return &inner, err
 	default:
 		return nil, ErrTxTypeNotSupported
