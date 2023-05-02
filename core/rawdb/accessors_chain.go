@@ -24,13 +24,13 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/agoraxyz/go-ethereum/common"
+	"github.com/agoraxyz/go-ethereum/core/types"
+	"github.com/agoraxyz/go-ethereum/crypto"
+	"github.com/agoraxyz/go-ethereum/ethdb"
+	"github.com/agoraxyz/go-ethereum/log"
+	"github.com/agoraxyz/go-ethereum/params"
+	"github.com/agoraxyz/go-ethereum/rlp"
 )
 
 // ReadCanonicalHash retrieves the hash assigned to a canonical block number.

@@ -23,15 +23,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/les/downloader"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/agoraxyz/go-ethereum/common"
+	"github.com/agoraxyz/go-ethereum/common/mclock"
+	"github.com/agoraxyz/go-ethereum/core/forkid"
+	"github.com/agoraxyz/go-ethereum/core/types"
+	"github.com/agoraxyz/go-ethereum/eth/protocols/eth"
+	"github.com/agoraxyz/go-ethereum/les/downloader"
+	"github.com/agoraxyz/go-ethereum/light"
+	"github.com/agoraxyz/go-ethereum/log"
+	"github.com/agoraxyz/go-ethereum/p2p"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

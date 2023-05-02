@@ -29,11 +29,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/agoraxyz/go-ethereum/common/hexutil"
+	"github.com/agoraxyz/go-ethereum/common/mclock"
+	"github.com/agoraxyz/go-ethereum/crypto"
+	"github.com/agoraxyz/go-ethereum/p2p/enode"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
 )
 
 // To regenerate discv5 test vectors, run

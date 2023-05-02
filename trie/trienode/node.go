@@ -16,7 +16,7 @@
 
 package trienode
 
-import "github.com/ethereum/go-ethereum/common"
+import "github.com/agoraxyz/go-ethereum/common"
 
 // Node is a wrapper which contains the encoded blob of the trie node and its
 // unique hash identifier. It is general enough that can be used to represent

@@ -19,10 +19,10 @@ package les
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/les/downloader"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/agoraxyz/go-ethereum/common"
+	"github.com/agoraxyz/go-ethereum/core/rawdb"
+	"github.com/agoraxyz/go-ethereum/les/downloader"
+	"github.com/agoraxyz/go-ethereum/log"
 )
 
 // synchronise tries to sync up our local chain with a remote peer.

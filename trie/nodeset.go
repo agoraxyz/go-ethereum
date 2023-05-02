@@ -21,8 +21,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/agoraxyz/go-ethereum/common"
+	"github.com/agoraxyz/go-ethereum/trie/trienode"
 )
 
 // NodeSet contains all dirty nodes collected during the commit operation.
